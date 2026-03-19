@@ -7,8 +7,11 @@ export default defineNuxtConfig({
     strict: true,
    },
    runtimeConfig: {
-    notionApiKey:      process.env.NOTION_API_KEY,
-    notionQuestionDb:  process.env.NOTION_QUESTIONS_DB_ID,
+    notionApiKey:               process.env.NOTION_API_KEY,
+    notionQuestionDb:           process.env.NOTION_QUESTIONS_DB_ID,
+    notionRoutineMinimalMildDb: process.env.NOTION_ROUTINE_MINIMAL_MILD_DB_ID,
+    notionRoutineModerateDb:    process.env.NOTION_ROUTINE_MODERATE_DB_ID,
+    notionRoutineSevereDb:      process.env.NOTION_ROUTINE_SEVERE_EXTREME_DB_ID,
   },
   app: {
     head: {

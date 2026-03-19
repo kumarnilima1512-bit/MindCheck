@@ -12,14 +12,14 @@ export interface LevelResult {
 }
 
 export interface AssessmentResult {
-  anxietyScore:       number
-  depressionScore:    number
-  totalScore:         number
-  maxScore:           number
-  percentScore:       number
-  anxietyLevel:       LevelResult
-  depressionLevel:    LevelResult
-  overallLevel:       LevelResult
+  anxietyScore:    number
+  depressionScore: number
+  totalScore:      number
+  maxScore:        number
+  percentScore:    number
+  anxietyLevel:    LevelResult
+  depressionLevel: LevelResult
+  overallLevel:    LevelResult
 }
 
 function getLevel(percent: number): LevelResult {
@@ -67,14 +67,16 @@ function getLevel(percent: number): LevelResult {
 
 export const useAssessmentStore = defineStore('assessment', {
   state: () => ({
-    answers:  {} as Record<number, number>,
-    result:   null as AssessmentResult | null,
-    userName: '' as string,
+    answers:   {} as Record<number, number>,
+    result:    null as AssessmentResult | null,
+    userName:  '' as string,
+    startedAt: null as string | null,
   }),
 
   actions: {
     setAnswers(answers: Record<number, number>, totalQuestions: number): void {
-      this.answers = answers
+      this.answers   = answers
+      this.startedAt = new Date().toISOString()
 
       const anxietyIds    = [1, 2, 3, 4, 5, 6, 7]
       const depressionIds = [8, 9, 10, 11, 12, 13, 14, 15]
@@ -105,9 +107,10 @@ export const useAssessmentStore = defineStore('assessment', {
     },
 
     reset(): void {
-      this.answers  = {}
-      this.result   = null
-      this.userName = ''
+      this.answers   = {}
+      this.result    = null
+      this.userName  = ''
+      this.startedAt = null
     },
   },
 })
