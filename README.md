@@ -1,75 +1,88 @@
-# Nuxt Minimal Starter
+# 🧠 MindCheck
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+MindCheck is a mental wellness web application that helps users estimate their anxiety and depression levels through a structured questionnaire. Based on the assessment, the application generates a personalized 30-day wellness routine designed to encourage healthy habits and emotional well-being.
 
-## Setup
+> ⚠️ **Disclaimer:** MindCheck is intended for educational and self-reflection purposes only. It does not provide medical diagnoses or replace professional mental health care.
 
-Make sure to install dependencies:
+---
+
+## ✨ Features
+
+- 📝 Interactive mental wellness questionnaire
+- 📊 Anxiety & depression level estimation
+- 📅 Personalized 30-day wellness routine
+- 🔄 Continuous routine cycle after 30 days
+- 📱 Responsive and user-friendly interface
+- ⚡ Fast and lightweight performance
+
+---
+
+## 🛠️ Tech Stack
+
+- Nuxt.js
+- Vue.js
+- Tailwind CSS
+- TypeScript
+
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository
 
 ```bash
-# npm
+git clone https://github.com/kumarnilima1512-bit/MindCheck.git
+```
+
+Go to the project directory
+
+```bash
+cd MindCheck
+```
+
+Install dependencies
+
+```bash
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+Run the development server
 
 ```bash
-# npm
 npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+Open
 
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+```
+http://localhost:3000
 ```
 
-Locally preview production build:
+---
 
-```bash
-# npm
-npm run preview
 
-# pnpm
-pnpm preview
+## 🎯 How It Works
 
-# yarn
-yarn preview
+1. Answer a series of mental wellness questions.
+2. The application estimates your wellness level based on your responses.
+3. A personalized 30-day daily routine is generated.
+4. The routine repeats after completion to help maintain healthy habits.
 
-# bun
-bun run preview
-```
+---
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## 🔮 Future Improvements
+
+- User authentication
+- Progress tracking
+- Mood journal
+- Daily reminders
+- Analytics dashboard
+- AI-powered wellness suggestions
+- Export routine as PDF
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
